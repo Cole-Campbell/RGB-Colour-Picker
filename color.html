@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Colour Picker Game</title>
+	<link rel="stylesheet" type="text/css" href="colorGame.css">
+</head>
+<body>
+	<div id="wrapper" class="overlay">
+		<div id="startMessage">
+			<h1>Welcome To The RGB Guessing Game!</h1>
+			<p>
+				<span>How It Works:</span> Colours will be randomly generated and an RGB value will be displayed up top. RGB stands for Red, Green, and Blue. The higher the value of the colour, the more saturated the winning colour will be like that. The colours do mix, so be careful and think before you select! Enjoy the game!
+			</p>
+			<button id="play">Play The Game</button>
+		</div>
+	</div>
+	<div id="header">
+		<h1><span id="colorCode"></span><br/>Guessing Game</h1>
+	</div>
+	<div id="menu">
+		<button id="new">New Colours</button>
+		<span id="message"></span>
+		<button class="mode">Easy</button>
+		<button class="mode selected">Hard</button>
+	</div>
+	<div id="container">
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+	</div>
+	
+	<script src="color.js"></script>
+</body>
+</html>

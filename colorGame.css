@@ -1,0 +1,172 @@
+body{
+	background-color: #535353;
+	margin: 0;
+}
+
+h1{
+	margin: 0;
+	font-family: helvetica;
+	font-weight: lighter;
+	line-height: 50px;
+	padding: 20px 0;
+}
+
+h1 span{
+	font-size: 200%;
+}
+
+button{
+	border: none;
+	background: transparent;
+	text-transform: uppercase;
+	height: 100%;
+	letter-spacing: 1px;
+	outline: 0;
+	width: 27%;
+}
+
+button:hover{
+	background-color: #cc504a;
+	color: white;
+	box-shadow: none;
+	transition: all .5s;
+}
+
+.overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(33,33,33,.7);
+	z-index: 4;
+	transition: all 0.5s;
+}
+
+#startMessage{
+	transition: inherit;
+	width: 80%;
+	margin: 0px auto;
+	background-color: rgba(220,220,220,.8);
+	padding: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 5;
+	border: 1px solid #333;
+}
+
+#startMessage button{
+ width: 100%;
+ text-align: center;
+}
+
+#startMessage h1, p{
+	text-align: center;
+	padding: 0;
+	font-family: helvetica;
+	letter-spacing: 1px;
+}
+
+#startMessage span{
+	font-weight: bold;
+}
+
+#startMessage button{
+	width: auto;
+}
+
+#message{
+	display: inline-block;
+	width: 15%;
+	font-size: 85%;
+	font-family: helvetica;
+	font-weight: lighter;
+}
+
+#menu {
+	height: 30px;
+	background-color: white;
+	margin-bottom: 20px;
+	width: 100%;
+	text-align: center;
+}
+
+#header{
+	background-color: #cc504a;
+	min-height: 125px;
+}
+
+#header h1{
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+}
+
+#container{
+	max-width: 600px;
+	min-width: 300px;
+	margin: 0px auto;
+}
+
+.square{
+	background: grey;
+	width: 30%;
+	padding-bottom: 30%;
+	margin: 1.66%;
+	float: left;
+	border-radius: 20px;
+	transition: all .5s;
+}
+
+.hide{
+	transition-duration: .5s;
+	opacity: 0;
+	display: hidden;
+}
+
+.selected{
+	background-color: #cc504a;
+	color: white;
+}
+
+@media only screen and (max-width : 480px) {
+	.square{
+		width: 47%;
+		padding-bottom: 35%;
+		margin:  1.5%;
+	}
+
+	button{
+		font-size: 120%;
+		width: 100%;
+	}
+
+	#menu{
+		height: auto;
+	}
+	
+	#startMessage p{
+		font-size: 130%;
+	}
+
+	#startMessage h1{
+		font-size: 200%;
+	}
+
+	#startMessage button{
+		width: 100%;
+		text-align: center;
+	}
+
+	#message{
+		font-size: 100%;
+		font-weight: normal;
+		width: 100%;
+	}
+
+	#colorCode{
+		font-size: 120%;
+	}
+}
