@@ -34,18 +34,21 @@ button:hover{
 
 .overlay{
 	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
+	height: 100%;
+	width: 100%;
 	background-color: rgba(33,33,33,.7);
 	z-index: 4;
 	transition: all 0.5s;
 }
 
+#colorCode{
+	font-size: 170%;
+}
+
 #startMessage{
 	transition: inherit;
-	width: 80%;
+	width: 60%;
+	max-width: 400px;
 	margin: 0px auto;
 	background-color: rgba(220,220,220,.8);
 	padding: 20px;
@@ -131,7 +134,12 @@ button:hover{
 	color: white;
 }
 
-@media only screen and (max-width : 480px) {
+@media screen and (max-width: 480px) {
+	.overlay{
+		height: 100%;
+	}
+
+
 	.square{
 		width: 47%;
 		padding-bottom: 35%;
@@ -146,9 +154,13 @@ button:hover{
 	#menu{
 		height: auto;
 	}
+
+	#startMessage{
+		width: 80%;
+	}
 	
 	#startMessage p{
-		font-size: 130%;
+		font-size: 100%;
 	}
 
 	#startMessage h1{
